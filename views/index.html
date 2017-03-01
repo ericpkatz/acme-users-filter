@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Acme Users Filter</h1>
+      <form method='POST' action='/regenerate'>
+      <button class='btn btn-danger' href='/regenerate'>Regenerate Users</button>
+      </form>
+      <div class='row'>
+        <div class='col-sm-8'>
+          {% include './_users.html' %}
+        </div>
+        <div class='col-sm-4'>
+          {% include './_instructions.html' %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

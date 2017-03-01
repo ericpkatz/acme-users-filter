@@ -1,0 +1,19 @@
+<h2>Instructions</h2>
+<pre>
+  name repo acme-users-filter
+  db/
+    _conn.js - 2 lines
+    User.js - ~35 lines
+      classMethods
+        findUsersByFirstLetterOfLastName
+        generateUserMap
+    index.js ~55 lines
+      sync
+      seed
+      models: { User }
+  server.js ~35 lines
+    GET /
+    GET /users/filter/:letter
+    POST /regenerate
+  views/index.html ~50 lines
+</pre>
