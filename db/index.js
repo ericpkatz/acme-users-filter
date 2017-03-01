@@ -46,6 +46,7 @@ const seed = (random = true)=> {
     .then( ()=> generateSeedData(random).map( userData => User.create(userData)));
 };
 
+
 module.exports = {
   sync,
   seed,

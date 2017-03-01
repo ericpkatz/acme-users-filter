@@ -1,0 +1,19 @@
+<ul class='nav nav-tabs'>
+  {% for key in keys %}
+    <li
+      {% if letter === key %}
+        class='active'
+      {% endif %}
+      >
+      <a href='/users/filter/{{key}}'>{{ key }} ({{ map[key] }})</a>
+    </li>
+  {% endfor %}
+  <li
+      {% if !letter %}
+        class='active'
+      {% endif %}
+    >
+    <a href='/'>
+      All
+    </a>
+</ul>

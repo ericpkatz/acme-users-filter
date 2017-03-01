@@ -4,16 +4,19 @@
   db/
     _conn.js - 2 lines
     User.js - ~35 lines
-      classMethods
-        findUsersByFirstLetterOfLastName
-        generateUserMap
+      -- use class methods to keep routes small
     index.js ~55 lines
       sync
       seed
       models: { User }
-  server.js ~35 lines
+  server.js ~20 lines
+
+  routes.js ~25 lines
     GET /
     GET /users/filter/:letter
     POST /regenerate
-  views/index.html ~50 lines
+
+  views/index.html
+    _users.html ~20 lines
+    _filter.html ~20 lines
 </pre>
